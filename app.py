@@ -51,7 +51,12 @@ user_input = st.text_area("Enter the message you want to analyze:", placeholder=
 
 # Prediction Logic
 def analyze_text(text):
-    toxic_keywords = ["idiot", "hate", "stupid", "kill", "ugly", "loser"]
+    toxic_keywords = ["idiot", "hate", "stupid", "kill", "ugly", "loser", "dumb", "fool", "moron",
+"trash", "worthless", "pathetic", "jerk", "creep", "bastard", "scum",
+"shut up", "die", "annoying", "disgusting", "nonsense", "garbage",
+"retard", "psycho", "mad", "crazy", "evil", "brainless", "failure",
+"lame", "weak", "useless", "coward", "pervert", "toxic", "dirty",
+"stink", "sick", "hate you", "go die", "kill yourself", "nobody likes you"]
     text_lower = text.lower()
     
     # Check if any keyword exists in the input
